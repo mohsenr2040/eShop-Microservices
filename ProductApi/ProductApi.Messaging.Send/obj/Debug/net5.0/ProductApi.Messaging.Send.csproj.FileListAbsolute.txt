@@ -1,0 +1,15 @@
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ProductApi.Messaging.Send.deps.json
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ProductApi.Messaging.Send.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ref\ProductApi.Messaging.Send.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ProductApi.Messaging.Send.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ProductApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\bin\Debug\net5.0\ProductApi.Domain.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.csproj.AssemblyReference.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.AssemblyInfoInputs.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.AssemblyInfo.cs
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.csproj.CoreCompileInputs.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.csproj.CopyComplete
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ref\ProductApi.Messaging.Send.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Messaging.Send\obj\Debug\net5.0\ProductApi.Messaging.Send.pdb
