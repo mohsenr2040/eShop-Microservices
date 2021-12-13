@@ -1,0 +1,17 @@
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Service.deps.json
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Service.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ref\ProductApi.Service.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Service.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Data.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Data.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Domain.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.csproj.AssemblyReference.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.AssemblyInfoInputs.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.AssemblyInfo.cs
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.csproj.CoreCompileInputs.cache
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.csproj.CopyComplete
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ref\ProductApi.Service.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.pdb
