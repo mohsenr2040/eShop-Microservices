@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductApi.Domain.Entities;
 using ProductApi.Models;
@@ -24,7 +25,9 @@ namespace ProductApi.Controllers
             _mapper = mapper;
             _mediator = mediator;
         }
-
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         [HttpPost]
         public async Task<ActionResult<Product>> Product(CreateProductModel createProductModel)
         {
@@ -61,6 +64,22 @@ namespace ProductApi.Controllers
                 }) ;
             }
             catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<Product>> GetProduct(Guid ProductId)
+        {
+            try
+            {
+                return await _mediator.Send(new GetProductByIdQuery
+                {
+                    Id= ProductId
+                });
+            }
+            catch(Exception ex)
             {
                 return BadRequest(ex.Message);
             }

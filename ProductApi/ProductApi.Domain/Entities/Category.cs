@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductApi.Domain.Entities
 {
-    public class Category 
+    public class Category :BaseEntity
     {
         public string Name { get; set; }
         public virtual Category ParentCategory { get; set; }

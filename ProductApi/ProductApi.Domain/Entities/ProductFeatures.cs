@@ -9,7 +9,7 @@ namespace ProductApi.Domain.Entities
     public class ProductFeatures : BaseEntity
     {
         public virtual Product Product { get; set; }
-        public Guid ProductId { get; set; }
+        public int ProductId_fk { get; set; }
         public string DisplayName { get; set; }
         public string Value { get; set; }
     }

@@ -18,6 +18,10 @@ namespace ProductApi.Data.Database
 
         }
         public DbSet<Product> Product { get; set; }
+        public DbSet<ProductFeatures> ProductFeatures { get; set; }
+        public DbSet<ProductImages> ProductImages { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<CategoryImage> CategoryImage { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
@@ -28,7 +32,6 @@ namespace ProductApi.Data.Database
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.Property(p => p.Name).IsRequired();
-                entity.Property(p => p.CategoryId).IsRequired();
                 entity.HasQueryFilter(p => p.IsDeleted == false);
             }) ;
         }
