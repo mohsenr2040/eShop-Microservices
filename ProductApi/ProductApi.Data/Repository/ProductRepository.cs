@@ -18,7 +18,7 @@ namespace ProductApi.Data.Repository
         }
         public async Task<Product> GetProductByIdAsync(Guid Id, CancellationToken cancellationtoken)
         {
-            return await _context.Product.FirstOrDefaultAsync(p => p.ProductId == Id,cancellationtoken);
+            return await _context.Product.FirstOrDefaultAsync(p => p.ProductGuid == Id,cancellationtoken);
         }
     }
 }

@@ -13,3 +13,6 @@ D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\obj\Debug
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\obj\Debug\net5.0\ProductApi.Data.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\obj\Debug\net5.0\ref\ProductApi.Data.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\obj\Debug\net5.0\ProductApi.Data.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\bin\Debug\net5.0\ProductApi.Data.runtimeconfig.json
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\bin\Debug\net5.0\ProductApi.Data.runtimeconfig.dev.json
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Data\obj\Debug\net5.0\ProductApi.Data.genruntimeconfig.cache

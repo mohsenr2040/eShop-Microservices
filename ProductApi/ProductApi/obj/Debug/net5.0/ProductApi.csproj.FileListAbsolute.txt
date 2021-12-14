@@ -67,5 +67,6 @@ D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\ProductApi.Messaging.Send.pdb
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\ProductApi.Service.pdb
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\ProductApi.Data.pdb
-D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\ProductApi.xml
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\Humanizer.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
