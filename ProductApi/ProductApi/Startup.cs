@@ -101,18 +101,20 @@ namespace ProductApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProductApi v1"));
             }
             else
             {
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product API V1");
-                c.RoutePrefix = string.Empty;
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product API V1");
+            //    c.RoutePrefix = string.Empty;
+            //});
             app.UseRouting();
 
             app.UseAuthorization();

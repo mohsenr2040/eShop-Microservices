@@ -1,0 +1,15 @@
+﻿using MediatR;
+using OrderApi.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OrderApi.Service.Command
+{
+    public class UpdateOrderDetailCommand :IRequest<OrderDetail>
+    {
+        public OrderDetail OrderDetail { get; set; }
+    }
+}

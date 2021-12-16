@@ -10,3 +10,15 @@ D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Domain\obj\Deb
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ref\ProductApi.Domain.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.pdb
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\bin\Debug\net5.0\ProductApi.Domain.deps.json
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\bin\Debug\net5.0\ProductApi.Domain.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\bin\Debug\net5.0\ref\ProductApi.Domain.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\bin\Debug\net5.0\ProductApi.Domain.pdb
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.csproj.AssemblyReference.cache
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.AssemblyInfoInputs.cache
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.AssemblyInfo.cs
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ref\ProductApi.Domain.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Domain\obj\Debug\net5.0\ProductApi.Domain.pdb
