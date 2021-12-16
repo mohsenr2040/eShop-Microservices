@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0t27T/vsOsD1otFjd/21NDAeVNeacrNG23vZdsDotkos9zfE3KkDTNyyK6aM6iXYKCOlHSeXFLaZ8pTxzsQFuA==",
+  "dgSpecHash": "/xK8u8Av965eRRMJvBg4Px3Ci9BXlOsbpqapI1SKoPioqwlDwjKZfVTYzkXXHgmiuHbncCIwqYz8V+s58z5GwQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
+  "projectFilePath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\IT-Human\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\IT-Human\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
-    "C:\\Users\\IT-Human\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\IT-Human\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
