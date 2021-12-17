@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Service.Command
 {
-    public class UpdateOrderCommandHandler:IRequestHandler<UpdateOrderCommand,Order>
+    public class UpdateOrderCommandHandler:IRequestHandler<UpdateOrderCommand>
     {
         private readonly IOrderRepository _orderRepository;
         public UpdateOrderCommandHandler(IOrderRepository orderRepository)
@@ -18,9 +18,10 @@ namespace OrderApi.Service.Command
             _orderRepository = orderRepository;
         }
 
-        public async Task<Order> Handle(UpdateOrderCommand requset,CancellationToken cancellationToken )
+        public async Task<Unit> Handle(UpdateOrderCommand requset,CancellationToken cancellationToken )
         {
-            return await _orderRepository.UpdateAsync(requset.Order);
+             await _orderRepository.UpdateRangeAsync(requset.Orders);
+            return Unit.Value;
         }
     }
 }

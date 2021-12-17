@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Service.Command
 {
-    public class UpdateOrderDetailCommand :IRequest<OrderDetail>
+    public class UpdateOrderDetailCommand :IRequest
     {
-        public OrderDetail OrderDetail { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }

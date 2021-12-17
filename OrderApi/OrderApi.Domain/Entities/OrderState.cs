@@ -15,10 +15,13 @@ namespace OrderApi.Domain.Entities
         [Display(Name = "پرداخت شده")]
         Paid = 1,
 
+        [Display(Name = "پرداخت نشده")]
+        UnPaid = 2,
+
         [Display(Name = "در حال پردازش")]
-        Processing = 2,
+        Processing = 3,
      
         [Display(Name = "تحویل داده شده")]
-        Delivered = 3
+        Delivered = 4
     }
 }

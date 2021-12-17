@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver;
+using OrderApi.Data.Database;
 using OrderApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,11 +12,18 @@ namespace OrderApi.Data.Context
 {
     public class OrderContext:DbContext
     {
-        public OrderContext(DbContextOptions options) : base(options)
+        //private readonly IMongoCollection<Order> Orders;
+        //private readonly IMongoCollection<OrderDetail> OrderDetails;
+
+        public OrderContext(DbContextOptions options, IOrderServiceDatabaseSettings settings) : base(options)
         {
+            var client = new MongoClient(settings.ConnectionString);
+            var database = client.GetDatabase(settings.DatabaseName);
+            Orders = database.GetCollection<Order>(settings.OrdersCollectionName);
+            OrderDetails = database.GetCollection<OrderDetail>(settings.OrderDetailsCollectionName);
         }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails  { get; set; }
+        public IMongoCollection<Order> Orders;
+        public IMongoCollection<OrderDetail> OrderDetails;
         //SaveChanges();
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Service.Query
 {
-    public class GetPaidOrdersQuery:IRequest<OrderState>
+    public class GetPaidOrdersQuery:IRequest<List<Order>>
     {
         public enum _State {get };
     }
