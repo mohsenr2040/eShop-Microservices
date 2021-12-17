@@ -10,16 +10,17 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Service.Command
 {
-    public class UpdateOrderDetailCommandHandler : IRequestHandler<UpdateOrderDetailCommand, OrderDetail>
+    public class UpdateOrderDetailCommandHandler : IRequestHandler<UpdateOrderDetailCommand>
     {
-        private readonly IOrderRepository _orderRepository;
-        public UpdateOrderDetailCommandHandler(IOrderRepository orderRepository)
+        private readonly IOrderDetailRepository _orderDetailRepository;
+        public UpdateOrderDetailCommandHandler(IOrderDetailRepository  orderDetailRepository)
         {
-            _orderRepository = orderRepository;
+            _orderDetailRepository = orderDetailRepository;
         }
-        public async Task<OrderDetail> Handle(UpdateOrderDetailCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(UpdateOrderDetailCommand request, CancellationToken cancellationToken)
         {
-            return await _orderRepository.UpdateAsync(request.OrderDetail);
+             await _orderDetailRepository.UpdateRangeAsync(request.OrderDetails);
+            return Unit.Value;
         }
     }
 }

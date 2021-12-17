@@ -12,14 +12,14 @@ namespace OrderApi.Service.Command
 {
     public class CreateOrderDetailCommandHandler:IRequestHandler<CreateOrderDetailCommand,List<OrderDetail>>
     {
-        private readonly IOrderRepository _orderRepository;
-        public CreateOrderDetailCommandHandler(IOrderRepository orderRepository)
+        private readonly IOrderDetailRepository _orderDetailRepository;
+        public CreateOrderDetailCommandHandler(IOrderDetailRepository  orderDetailRepository)
         {
-            _orderRepository = orderRepository;
+            _orderDetailRepository = orderDetailRepository;
         }
         public async Task<List<OrderDetail>> Handle (CreateOrderDetailCommand request,CancellationToken cancellationToken )
         {
-           return  await _orderRepository.AddRangeAsync(request.OrderDetails);
+           return  await _orderDetailRepository.AddRangeAsync(request.OrderDetails);
         }
     }
 }

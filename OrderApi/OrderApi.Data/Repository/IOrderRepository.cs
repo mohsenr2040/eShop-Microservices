@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Repository
 {
-    public interface IOrderRepository:IRepository<Order>,IRepository<OrderDetail>
+    public interface IOrderRepository:IRepository<Order>
     {
         Task<List<Order>> GetPaidOrdersAsync(CancellationToken cancellationToken);
-        Task<Order> GetOrderByIdAsync(int Id, CancellationToken cancellationToken);
+        Task<List<Order>> GetUnPaidOrdersAsync(CancellationToken cancellationToken);
+        Task<Order> GetOrderByIdAsync(string Id, CancellationToken cancellationToken);
         Task<List<Order>> GetOrdersByCustomerGuidAsync(Guid CustomerId, CancellationToken cancellationToken);
 
-        Task<List<OrderDetail>> GetOrderDetailsByOrderIdAsync(int Id, CancellationToken cancellationToken);
         
     }
 }

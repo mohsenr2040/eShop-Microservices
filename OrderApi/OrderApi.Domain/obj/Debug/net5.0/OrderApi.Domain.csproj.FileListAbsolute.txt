@@ -1,0 +1,12 @@
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\bin\Debug\net5.0\OrderApi.Domain.deps.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\bin\Debug\net5.0\OrderApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\bin\Debug\net5.0\ref\OrderApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\bin\Debug\net5.0\OrderApi.Domain.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.csproj.AssemblyReference.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.AssemblyInfoInputs.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.AssemblyInfo.cs
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\ref\OrderApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Domain\obj\Debug\net5.0\OrderApi.Domain.pdb

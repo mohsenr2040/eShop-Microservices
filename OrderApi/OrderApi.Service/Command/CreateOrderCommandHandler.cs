@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Service.Command
 {
-    class CreateOrderCommandHandler :IRequestHandler<CreateOrderCommand,Order>
+    public class CreateOrderCommandHandler :IRequestHandler<CreateOrderCommand,Order>
     {
         private readonly IOrderRepository _orderRepository;
         public CreateOrderCommandHandler(IOrderRepository orderRepository)

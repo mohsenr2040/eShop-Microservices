@@ -88,7 +88,7 @@ namespace ProductApi
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IProductRepository, ProductRepository>();
-            services.AddTransient<IProductUpdateSender, ProductUpdateSender>();
+            services.AddTransient<IUpdateProductSender, UpdateProductSender>();
             services.AddTransient<IRequestHandler<CreateProductCommand, Product>, CreateProductCommandHandler>();
             services.AddTransient<IRequestHandler<UpdateProductCommand, Product>, UpdateProductCommandHandler>();
             services.AddTransient<IRequestHandler<GetProductByIdQuery, Product>, GetProductByIdQueryHandler>();
