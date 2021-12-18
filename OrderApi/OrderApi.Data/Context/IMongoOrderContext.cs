@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Context
 {
-    public interface IMongoDbContext
+    public interface IMongoOrderContext
     {
         IMongoCollection<T> GetCollection<T>(string name);
     }

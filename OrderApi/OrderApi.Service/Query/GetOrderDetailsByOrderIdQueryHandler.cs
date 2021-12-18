@@ -20,7 +20,7 @@ namespace OrderApi.Service.Query
 
         public async Task<List<OrderDetail>> Handle(GetOrderDetailsByOrderIdQuery request, CancellationToken cancellationToken)
         {
-            return await _orderDetailRepository.GetOrderDetailsByOrderIdAsync(request.order.OrderId,cancellationToken);
+            return await _orderDetailRepository.GetOrderDetailsByOrderIdAsync(request.order.Id,cancellationToken);
         }
     }
 }

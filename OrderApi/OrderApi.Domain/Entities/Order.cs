@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Domain.Entities
 {
-    public class Order: Document
+    public class Order: BaseEntity
     {
       
         public Guid CustomerGuid { get; set; }

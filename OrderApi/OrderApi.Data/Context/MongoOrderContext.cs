@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Context
 {
-    public class OrderContext:IMongoDbContext
+    public class MongoOrderContext:IMongoOrderContext
     {
         //private readonly IMongoCollection<Order> Orders;
         //private readonly IMongoCollection<OrderDetail> OrderDetails;
 
-        public OrderContext(DbContextOptions options, IOrderServiceDatabaseSettings settings) :base(options)
+        public MongoOrderContext( IOrderServiceDatabaseSettings settings) 
         {
             client = new MongoClient(settings.ConnectionString);
             database = client.GetDatabase(settings.DatabaseName);

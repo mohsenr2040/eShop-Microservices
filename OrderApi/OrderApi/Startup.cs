@@ -41,7 +41,10 @@ namespace OrderApi
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
-            services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
+            //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
+            services.Configure<OrderServiceDatabaseSettings> (
+             Configuration.GetSection("mongoDb-OrderService"));
+            services.AddSingleton<IOrderServiceDatabaseSettings, OrderServiceDatabaseSettings>();
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -55,11 +58,11 @@ namespace OrderApi
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddSingleton<IMongoOrderContext, MongoOrderContext>();
+
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
-            services.AddScoped<IOrderServiceDatabaseSettings, OrderServiceDatabaseSettings>();
             //services.AddTransient<IValidator<OrderModel>, OrderModelValidator>();
-            services.AddScoped<IMongoDbContext, OrderContext>();
             services.AddTransient<IRequestHandler<GetPaidOrdersQuery, List<Order>>, GetPaidOrdersQueryHandler>();
             services.AddTransient<IRequestHandler<GetOrderByIdQuery, Order>, GetOrderByIdQueryHandler>();
             services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();

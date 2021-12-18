@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Repository
 {
-    public interface IRepository<TDocument> where TDocument : IDocument, new()
+    public interface IRepository<TEntity> where TEntity : BaseEntity, new()
     {
-        public IEnumerable<TDocument> GetAll();
-        Task<TDocument> AddAsync(TDocument entity);
-        Task<List<TDocument>> AddRangeAsync(List<TDocument> entities);
-        Task<TDocument> UpdateAsync(TDocument entity);
-        Task UpdateRangeAsync(List<TDocument> entities);
+        Task<IEnumerable<TEntity>> GetAll();
+
+        Task<TEntity> AddAsync(TEntity entity);
+        Task<List<TEntity>> AddRangeAsync(List<TEntity> entities);
+        Task<TEntity> UpdateAsync(TEntity entity);
+
+        Task UpdateRangeAsync(List<TEntity> entities);
     }
 }
