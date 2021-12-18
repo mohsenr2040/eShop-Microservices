@@ -1,4 +1,5 @@
 ﻿using OrderApi.Data.Context;
+using OrderApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +8,23 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Repository
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
+    public class Repository<TDocument> : IRepository<TDocument> where TDocument : IDocument, new()
     {
         protected readonly OrderContext _orderContext;
         public Repository(OrderContext orderContext)
         {
             _orderContext = orderContext;
         }
-        public async Task<TEntity> AddAsync(TEntity entity)
+        private protected string GetCollectionName(Type documentType)
+        {
+            return ((BsonCollectionAttribute)documentType.GetCustomAttributes(
+                    typeof(BsonCollectionAttribute),
+                    true)
+                .FirstOrDefault())?.CollectionName;
+        }
+
+        https://medium.com/@marekzyla95/mongo-repository-pattern-700986454a0e
+        public async Task<TDocument> AddAsync(TDocument entity)
         {
             if (entity == null)
             {
@@ -23,7 +33,7 @@ namespace OrderApi.Data.Repository
 
             try
             {
-                await _orderContext.AddAsync(entity);
+                await _orderContext.GetCollection<TDocument>(GetCollectionName(typeof(TDocument)))(entity);
                 await _orderContext.SaveChangesAsync();
                 return entity;
             }
@@ -33,7 +43,7 @@ namespace OrderApi.Data.Repository
             }
         }
 
-        public async Task<List<TEntity>> AddRangeAsync(List<TEntity> entities)
+        public async Task<List<TDocument>> AddRangeAsync(List<TDocument> entities)
         {
             if (entities == null)
             {
@@ -52,7 +62,7 @@ namespace OrderApi.Data.Repository
             }
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public IEnumerable<TDocument> GetAll()
         {
             try
             {
@@ -64,7 +74,7 @@ namespace OrderApi.Data.Repository
             }
         }
 
-        public async Task<TEntity> UpdateAsync(TEntity entity)
+        public async Task<TDocument> UpdateAsync(TDocument entity)
         {
             if (entity == null)
             {
@@ -84,7 +94,7 @@ namespace OrderApi.Data.Repository
             }
         }
 
-        public async Task UpdateRangeAsync(List<TEntity> entities)
+        public async Task UpdateRangeAsync(List<TDocument> entities)
         {
             if (entities == null)
             {

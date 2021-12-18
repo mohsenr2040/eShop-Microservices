@@ -17,6 +17,9 @@ using OrderApi.Service.Query;
 using OrderApi.Service.Command;
 using MediatR;
 using OrderApi.Messaging.Receive.Receiver;
+using OrderApi.Data.Database;
+using OrderApi.Data.Context;
+using MongoDB.Driver;
 
 namespace OrderApi
 {
@@ -38,7 +41,7 @@ namespace OrderApi
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
-
+            services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -53,12 +56,13 @@ namespace OrderApi
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IOrderRepository, OrderRepository>();
-
+            services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+            services.AddScoped<IOrderServiceDatabaseSettings, OrderServiceDatabaseSettings>();
             //services.AddTransient<IValidator<OrderModel>, OrderModelValidator>();
-
+            services.AddScoped<IMongoDbContext, OrderContext>();
             services.AddTransient<IRequestHandler<GetPaidOrdersQuery, List<Order>>, GetPaidOrdersQueryHandler>();
             services.AddTransient<IRequestHandler<GetOrderByIdQuery, Order>, GetOrderByIdQueryHandler>();
-             services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();
+            services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();
             services.AddTransient<IRequestHandler<PayOrderCommand, Order>, PayOrderCommandHandler>();
             services.AddTransient<IRequestHandler<UpdateOrderCommand>, UpdateOrderCommandHandler>();
             services.AddTransient<IProductPriceUpdateService, ProductPriceUpdateService>();

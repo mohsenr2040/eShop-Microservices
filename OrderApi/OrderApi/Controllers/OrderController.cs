@@ -16,7 +16,7 @@ namespace OrderApi.Controllers
     [Produces("application/json")]
     [Route("[controller]")]
     [ApiController]
-    public class OrderController : Controller
+    public class OrderController : ControllerBase
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
