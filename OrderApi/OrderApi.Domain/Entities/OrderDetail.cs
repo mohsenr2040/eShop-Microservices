@@ -10,9 +10,6 @@ namespace OrderApi.Domain.Entities
 {
     public class OrderDetail:BaseEntity
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
         public virtual Order Order { get; set; }
         public string OrderId { get; set; }
         public int ProductId { get; set; }

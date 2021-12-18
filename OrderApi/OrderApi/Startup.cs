@@ -17,6 +17,9 @@ using OrderApi.Service.Query;
 using OrderApi.Service.Command;
 using MediatR;
 using OrderApi.Messaging.Receive.Receiver;
+using OrderApi.Data.Database;
+using OrderApi.Data.Context;
+using MongoDB.Driver;
 
 namespace OrderApi
 {
@@ -38,7 +41,10 @@ namespace OrderApi
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
-
+            //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
+            services.Configure<OrderServiceDatabaseSettings> (
+             Configuration.GetSection("mongoDb-OrderService"));
+            services.AddSingleton<IOrderServiceDatabaseSettings, OrderServiceDatabaseSettings>();
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -52,13 +58,14 @@ namespace OrderApi
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddSingleton<IMongoOrderContext, MongoOrderContext>();
+
             services.AddScoped<IOrderRepository, OrderRepository>();
-
+            services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             //services.AddTransient<IValidator<OrderModel>, OrderModelValidator>();
-
             services.AddTransient<IRequestHandler<GetPaidOrdersQuery, List<Order>>, GetPaidOrdersQueryHandler>();
             services.AddTransient<IRequestHandler<GetOrderByIdQuery, Order>, GetOrderByIdQueryHandler>();
-             services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();
+            services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();
             services.AddTransient<IRequestHandler<PayOrderCommand, Order>, PayOrderCommandHandler>();
             services.AddTransient<IRequestHandler<UpdateOrderCommand>, UpdateOrderCommandHandler>();
             services.AddTransient<IProductPriceUpdateService, ProductPriceUpdateService>();

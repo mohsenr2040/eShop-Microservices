@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Domain.Entities
 {
-    public class Order:BaseEntity
+    public class Order: BaseEntity
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string OrderId { get; set; } 
+      
         public Guid CustomerGuid { get; set; }
         public  OrderState OrderState  { get; set; }
         public string Addrress { get; set; }
