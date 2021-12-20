@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Context
 {
-    public class MongoOrderContext:IMongoOrderContext
+    public class MongoOrderContext
     {
         //private readonly IMongoCollection<Order> Orders;
         //private readonly IMongoCollection<OrderDetail> OrderDetails;
@@ -20,11 +20,11 @@ namespace OrderApi.Data.Context
         {
             client = new MongoClient(settings.ConnectionString);
             database = client.GetDatabase(settings.DatabaseName);
-            Orders = database.GetCollection<Order>(settings.OrdersCollectionName);
-            OrderDetails = database.GetCollection<OrderDetail>(settings.OrderDetailsCollectionName);
+            //Orders = database.GetCollection<Order>(settings.OrdersCollectionName);
+            //OrderDetails = database.GetCollection<OrderDetail>(settings.OrderDetailsCollectionName);
         }
-        public IMongoCollection<Order> Orders { get; set; }
-        public IMongoCollection<OrderDetail> OrderDetails { get; set; }
+        //public IMongoCollection<Order> Orders { get; set; }
+        //public IMongoCollection<OrderDetail> OrderDetails { get; set; }
         private IMongoDatabase database { get; set; }
         private MongoClient client { get; set; }
         public IMongoCollection<T> GetCollection<T>(string name)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0nKWxAc+Vcb6MibrRpg6qwYpxK2lvLhOT5mAuUUTYtuLnMaEIztad05eKcdQsC07UqfimB38krmsXQmf9UUkJw==",
+  "dgSpecHash": "2fddvr3szruhJEEZd5iW+VMZcSIL45jPvP7fBYlr7Ha5ys3cbv/eO7YmbYV/ndRuHM9QV6wryz4bEKpHb9NAJQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\OrderApi.csproj",
   "expectedPackageFiles": [

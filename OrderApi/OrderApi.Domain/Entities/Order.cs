@@ -10,11 +10,9 @@ namespace OrderApi.Domain.Entities
 {
     public class Order: BaseEntity
     {
-      
         public Guid CustomerGuid { get; set; }
         public  OrderState OrderState  { get; set; }
         public string Addrress { get; set; }
         public string CustomerFullName { get; set; }
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

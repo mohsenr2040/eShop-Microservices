@@ -20,6 +20,8 @@ using OrderApi.Messaging.Receive.Receiver;
 using OrderApi.Data.Database;
 using OrderApi.Data.Context;
 using MongoDB.Driver;
+using Microsoft.Extensions.Options;
+using OrderApi.Models;
 
 namespace OrderApi
 {
@@ -36,18 +38,20 @@ namespace OrderApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHealthChecks();
-            services.AddOptions();
 
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
             //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
+       
             services.Configure<OrderServiceDatabaseSettings> (
              Configuration.GetSection("mongoDb-OrderService"));
-            services.AddSingleton<IOrderServiceDatabaseSettings, OrderServiceDatabaseSettings>();
+            services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
+                  sp.GetRequiredService<IOptions<OrderServiceDatabaseSettings>>().Value);
+            services.AddSingleton<MongoOrderContext>();
 
             services.AddAutoMapper(typeof(Startup));
-
+            //services.AddAutoMapper(typeof(OderModel),typeof(Order));
             services.AddMvc();
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -56,9 +60,10 @@ namespace OrderApi
             });
 
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
+            services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(CreateOrderCommand).Assembly);
+            services.AddOptions();
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddSingleton<IMongoOrderContext, MongoOrderContext>();
 
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
