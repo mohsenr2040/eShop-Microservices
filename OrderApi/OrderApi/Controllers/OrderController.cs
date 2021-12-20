@@ -30,7 +30,6 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         [HttpPost]
-        [HttpPost]
         public async Task<ActionResult<Order>> Order(OderModel orderModel)
         {
             try

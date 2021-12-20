@@ -13,7 +13,7 @@ namespace OrderApi.Data.Repository
 {
     public class OrderRepository : Repository<Order>, IOrderRepository
     {
-        public OrderRepository(IMongoOrderContext orderContext) : base(orderContext)
+        public OrderRepository(MongoOrderContext orderContext) : base(orderContext)
         {
             
         }

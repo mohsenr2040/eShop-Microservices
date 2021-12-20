@@ -11,9 +11,9 @@ namespace OrderApi.Data.Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity, new()
     {
-        protected readonly IMongoOrderContext _orderContext;
+        protected readonly MongoOrderContext _orderContext;
         protected IMongoCollection<TEntity> _dbCollection;
-        public Repository(IMongoOrderContext orderContext)
+        public Repository(MongoOrderContext orderContext)
         {
             _orderContext = orderContext;
             _dbCollection = _orderContext.GetCollection<TEntity>(typeof(TEntity).Name);
