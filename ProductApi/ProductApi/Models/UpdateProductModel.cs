@@ -17,5 +17,9 @@ namespace ProductApi.Models
         public int Inventory { get; set; }
         public bool Displayed { get; set; }
         public int CategoryId { get; set; }
+        public DateTime InsertTime { get; set; } 
+        public DateTime? UpdateTime { get; set; } = DateTime.Now;
+        public bool IsDeleted { get; set; } 
+        public DateTime? DeleteTime { get; set; }
     }
 }
