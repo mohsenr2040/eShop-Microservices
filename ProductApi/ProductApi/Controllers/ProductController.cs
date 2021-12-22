@@ -43,7 +43,8 @@ namespace ProductApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut]
         public async Task<ActionResult<Product>> Product(UpdateProductModel updateProductModel)
         {
@@ -68,7 +69,8 @@ namespace ProductApi.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet]
         public async Task<ActionResult<Product>> GetProduct(Guid ProductId)
         {
