@@ -1,0 +1,30 @@
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.deps.json
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.dll
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\ref\OrderApi.Data.dll
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.pdb
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Domain.dll
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Domain.pdb
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csprojAssemblyReference.cache
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.AssemblyInfoInputs.cache
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.AssemblyInfo.cs
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csproj.CoreCompileInputs.cache
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csproj.CopyComplete
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.dll
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\ref\OrderApi.Data.dll
+D:\asp core\Microservice\MicroserviceDemo-master\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.pdb
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.deps.json
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.dll
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\ref\OrderApi.Data.dll
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.pdb
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Domain.dll
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Domain.pdb
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csproj.AssemblyReference.cache
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.AssemblyInfoInputs.cache
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.AssemblyInfo.cs
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csproj.CoreCompileInputs.cache
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.csproj.CopyComplete
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.dll
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\ref\OrderApi.Data.dll
+E:\Projects\Microservice\test\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.pdb

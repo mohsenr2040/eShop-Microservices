@@ -12,7 +12,7 @@ namespace OrderApi.Data.Repository
     {
         Task<List<Order>> GetPaidOrdersAsync(CancellationToken cancellationToken);
         Task<List<Order>> GetUnPaidOrdersAsync(CancellationToken cancellationToken);
-        Task<Order> GetOrderByIdAsync(string Id, CancellationToken cancellationToken);
+        Task<Order> GetOrderByIdAsync(int Id, CancellationToken cancellationToken);
         Task<List<Order>> GetOrdersByCustomerGuidAsync(Guid CustomerId, CancellationToken cancellationToken);
 
         

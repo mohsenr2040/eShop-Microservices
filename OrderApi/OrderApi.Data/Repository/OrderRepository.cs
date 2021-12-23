@@ -13,29 +13,29 @@ namespace OrderApi.Data.Repository
 {
     public class OrderRepository : Repository<Order>, IOrderRepository
     {
-        public OrderRepository(MongoOrderContext orderContext) : base(orderContext)
+        public OrderRepository(OrderContext orderContext) : base(orderContext)
         {
             
         }
-        public async Task<Order> GetOrderByIdAsync(string Id, CancellationToken cancellationToken)
+        public async Task<Order> GetOrderByIdAsync(int Id, CancellationToken cancellationToken)
         {
-           return await _orderContext.GetCollection<Order>("Orders").Find(o => o.Id == Id).FirstOrDefaultAsync(cancellationToken);
+           return await _orderContext.Orders.FirstOrDefaultAsync(o => o.Id == Id);
         }
 
        
         public async Task<List<Order>> GetOrdersByCustomerGuidAsync(Guid CustomerId, CancellationToken cancellationToken)
         {
-            return await _orderContext.GetCollection<Order>("Orders").Find(o => o.CustomerGuid == CustomerId).ToListAsync(cancellationToken);
+            return await _orderContext.Orders.Where(o => o.CustomerGuid == CustomerId).ToListAsync(cancellationToken);
         }
 
         public async Task<List<Order>> GetPaidOrdersAsync(CancellationToken cancellationToken)
         {
-            return await _orderContext.GetCollection<Order>("Orders").Find(o=>o.OrderState==OrderState.Paid).ToListAsync(cancellationToken);
+            return await _orderContext.Orders.Where(o=>o.OrderState==OrderState.Paid).ToListAsync(cancellationToken);
         }
 
         public async Task<List<Order>> GetUnPaidOrdersAsync(CancellationToken cancellationToken)
         {
-            return await _orderContext.GetCollection<Order>("Orders").Find(o => o.OrderState == OrderState.UnPaid).ToListAsync(cancellationToken);
+            return await _orderContext.Orders.Where(o => o.OrderState == OrderState.UnPaid).ToListAsync(cancellationToken);
         }
     }
 }
