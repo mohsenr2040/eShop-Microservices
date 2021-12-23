@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Repository
 {
-    public interface IRepository<TEntity> where TEntity : BaseEntity, new()
+    public interface IRepository<TEntity> where TEntity : class, new()
     {
-        Task<IEnumerable<TEntity>> GetAll();
+        IEnumerable<TEntity> GetAll();
 
         Task<TEntity> AddAsync(TEntity entity);
         Task<List<TEntity>> AddRangeAsync(List<TEntity> entities);

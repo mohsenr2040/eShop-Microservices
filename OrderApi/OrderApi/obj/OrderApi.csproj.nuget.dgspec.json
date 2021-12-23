@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\OrderApi.csproj": {}
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi\\OrderApi.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj": {
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj",
+        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj",
         "projectName": "OrderApi.Data",
-        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj",
-        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\obj\\",
+        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -33,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
               }
             }
           }
@@ -77,26 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj",
+        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj",
         "projectName": "OrderApi.Domain",
-        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\obj\\",
+        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,26 +138,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj": {
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj",
+        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj",
         "projectName": "OrderApi.Messaging.Receive",
-        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj",
-        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\obj\\",
+        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -175,8 +169,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj"
               }
             }
           }
@@ -223,26 +217,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj",
+        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj",
         "projectName": "OrderApi.Service",
-        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj",
-        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\obj\\",
+        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -256,11 +248,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Data\\OrderApi.Data.csproj"
               },
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
               }
             }
           }
@@ -295,26 +287,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\OrderApi.csproj": {
+    "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi\\OrderApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\OrderApi.csproj",
+        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi\\OrderApi.csproj",
         "projectName": "OrderApi",
-        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\OrderApi.csproj",
-        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi\\obj\\",
+        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi\\OrderApi.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -328,14 +318,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj"
               },
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Messaging.Send\\OrderApi.Messaging.Receive.csproj"
               },
-              "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
-                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj"
+              "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj": {
+                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Service\\OrderApi.Service.csproj"
               }
             }
           }
@@ -361,6 +351,10 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "MongoDB.Bson": {
               "target": "Package",
@@ -389,7 +383,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,13 +13,13 @@ namespace OrderApi.Data.Repository
 {
     public class OrderDetailRepository:Repository<OrderDetail>, IOrderDetailRepository
     {
-        public OrderDetailRepository(MongoOrderContext orderContext) : base(orderContext)
+        public OrderDetailRepository(OrderContext orderContext) : base(orderContext)
         {
 
         }
-        public async Task<List<OrderDetail>> GetOrderDetailsByOrderIdAsync(string Id, CancellationToken cancellationToken)
+        public async Task<List<OrderDetail>> GetOrderDetailsByOrderIdAsync(int Id, CancellationToken cancellationToken)
         {
-            return await _orderContext.GetCollection<OrderDetail>("OrderDetails").Find(o=>o.OrderId==Id).ToListAsync(cancellationToken);
+            return await _orderContext.OrderDetails.Where(o=>o.OrderId==Id).ToListAsync(cancellationToken);
         }
 
     }

@@ -9,14 +9,12 @@ using System.Threading.Tasks;
 
 namespace OrderApi.Data.Repository
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity, new()
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
-        protected readonly MongoOrderContext _orderContext;
-        protected IMongoCollection<TEntity> _dbCollection;
-        public Repository(MongoOrderContext orderContext)
+        protected readonly OrderContext _orderContext;
+        public Repository(OrderContext orderContext)
         {
             _orderContext = orderContext;
-            _dbCollection = _orderContext.GetCollection<TEntity>(typeof(TEntity).Name);
         }
         public async Task<TEntity> AddAsync(TEntity entity)
         {
@@ -27,7 +25,7 @@ namespace OrderApi.Data.Repository
 
             try
             {
-                await _dbCollection.InsertOneAsync(entity);
+                await _orderContext.AddAsync(entity);
                 return entity;
             }
             catch (Exception ex)
@@ -45,7 +43,7 @@ namespace OrderApi.Data.Repository
 
             try
             {
-                await _dbCollection.InsertManyAsync(entities);
+                await _orderContext.AddRangeAsync(entities);
                 return entities;
             }
             catch (Exception ex)
@@ -54,10 +52,9 @@ namespace OrderApi.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<TEntity>> GetAll()
+        public  IEnumerable<TEntity> GetAll()
         {
-            var all = await _dbCollection.FindAsync(Builders<TEntity>.Filter.Empty);
-            return await all.ToListAsync();
+           return  _orderContext.Set<TEntity>(); 
         }
 
         public async Task<TEntity> UpdateAsync(TEntity entity)
@@ -69,9 +66,9 @@ namespace OrderApi.Data.Repository
 
             try
             {
-                await _dbCollection.ReplaceOneAsync(Builders<TEntity>.Filter.Eq("_id", entity.Id),entity);
+                _orderContext.Update(entity);
+                await _orderContext.SaveChangesAsync();
                 return entity;
-                
             }
             catch (Exception ex)
             {
@@ -88,10 +85,8 @@ namespace OrderApi.Data.Repository
 
             try
             {
-                foreach(var entity in entities)
-                {
-                    await _dbCollection.ReplaceOneAsync(Builders<TEntity>.Filter.Eq("_id", entity.Id), entity);
-                }
+                _orderContext.UpdateRange(entities);
+                await _orderContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {

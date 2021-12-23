@@ -63,7 +63,7 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet("GetOrder/{id}")]
-        public async Task<ActionResult<Order>> GetOrder(string id)
+        public async Task<ActionResult<Order>> GetOrder(int id)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("Pay/{id}")]
-        public async Task<ActionResult<Order>> Pay(string id)
+        public async Task<ActionResult<Order>> Pay(int id)
         {
             try
             {

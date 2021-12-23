@@ -22,6 +22,7 @@ using OrderApi.Data.Context;
 using MongoDB.Driver;
 using Microsoft.Extensions.Options;
 using OrderApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace OrderApi
 {
@@ -43,12 +44,11 @@ namespace OrderApi
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
             //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
-       
-            services.Configure<OrderServiceDatabaseSettings> (
-             Configuration.GetSection("mongoDb-OrderService"));
-            services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
-                  sp.GetRequiredService<IOptions<OrderServiceDatabaseSettings>>().Value);
-            services.AddSingleton<MongoOrderContext>();
+            services.AddDbContext<OrderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("OrderService_con")));
+            //services.Configure<OrderServiceDatabaseSettings> (
+            // Configuration.GetSection("mongoDb-OrderService"));
+            //services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
+            //      sp.GetRequiredService<IOptions<OrderServiceDatabaseSettings>>().Value);
 
             services.AddAutoMapper(typeof(Startup));
             //services.AddAutoMapper(typeof(OderModel),typeof(Order));
