@@ -1,4 +1,4 @@
-﻿using MongoDB.Driver;
+﻿
 using OrderApi.Data.Context;
 using OrderApi.Domain.Entities;
 using System;
@@ -26,6 +26,7 @@ namespace OrderApi.Data.Repository
             try
             {
                 await _orderContext.AddAsync(entity);
+                await _orderContext.SaveChangesAsync();
                 return entity;
             }
             catch (Exception ex)
@@ -40,7 +41,6 @@ namespace OrderApi.Data.Repository
             {
                 throw new ArgumentNullException($"{nameof(AddAsync)} entity must not be null");
             }
-
             try
             {
                 await _orderContext.AddRangeAsync(entities);

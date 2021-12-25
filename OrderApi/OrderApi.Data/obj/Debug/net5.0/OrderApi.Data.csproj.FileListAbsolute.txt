@@ -17,8 +17,6 @@ D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Data\obj\Debug\net
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.pdb
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.genruntimeconfig.cache
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.deps.json
-E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.runtimeconfig.json
-E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.runtimeconfig.dev.json
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\ref\OrderApi.Data.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.pdb
@@ -33,4 +31,6 @@ E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\obj\Debug\ne
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\obj\Debug\net5.0\ref\OrderApi.Data.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.pdb
+E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.runtimeconfig.json
+E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\bin\Debug\net5.0\OrderApi.Data.runtimeconfig.dev.json
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Data\obj\Debug\net5.0\OrderApi.Data.genruntimeconfig.cache

@@ -1,22 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MongoDB.Driver;
-using OrderApi.Data.Database;
 using OrderApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using System.Data.Entity;
 
 namespace OrderApi.Data.Context
 {
     public class OrderContext:DbContext
     {
-        public OrderContext()
-        {
-
-        }
         public OrderContext(DbContextOptions<OrderContext> options):base(options)
         {
 
@@ -29,7 +23,9 @@ namespace OrderApi.Data.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.HasAnnotation("Version", "1.0");
+            modelBuilder.Entity<Order>(entity => entity.HasQueryFilter(o => o.IsDeleted == false));
+            modelBuilder.Entity<OrderDetail>(entity => entity.HasQueryFilter(d => d.IsDeleted == false));
         }
     }
 }
