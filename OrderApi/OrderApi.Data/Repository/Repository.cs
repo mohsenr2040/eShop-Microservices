@@ -44,6 +44,7 @@ namespace OrderApi.Data.Repository
             try
             {
                 await _orderContext.AddRangeAsync(entities);
+                await _orderContext.SaveChangesAsync();
                 return entities;
             }
             catch (Exception ex)

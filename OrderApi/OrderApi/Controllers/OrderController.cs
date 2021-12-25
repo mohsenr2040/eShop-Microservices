@@ -30,18 +30,28 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         [HttpPost]
-        public async Task<ActionResult<Order>> Order(OderModel orderModel)
+        public async Task Order(OrderModel orderModel)
         {
+            Order order;
             try
             {
-                return await _mediator.Send(new CreateOrderCommand
+                order= await _mediator.Send(new CreateOrderCommand
                 {
                     Order = _mapper.Map<Order>(orderModel)
+                });
+                orderModel.OrderDetailsModels.Select(c => { c.OrderId = order.Id; return c; }).ToList();
+                //foreach (var detail in orderModel.OrderDetailsModels)
+                //{
+                //    detail.OrderId = order.Id;
+                //}
+                await _mediator.Send(new CreateOrderDetailCommand
+                {
+                    OrderDetails=_mapper.Map<List<OrderDetail>>(orderModel.OrderDetailsModels)
                 });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                 BadRequest(ex.Message);
             }
         }
 

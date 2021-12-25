@@ -42,6 +42,7 @@ namespace OrderApi
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
+
             //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
             services.AddEntityFrameworkSqlServer().AddDbContext<OrderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Order_Service")));
             //services.Configure<OrderServiceDatabaseSettings> (
