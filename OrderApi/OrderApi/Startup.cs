@@ -17,9 +17,7 @@ using OrderApi.Service.Query;
 using OrderApi.Service.Command;
 using MediatR;
 using OrderApi.Messaging.Receive.Receiver;
-using OrderApi.Data.Database;
 using OrderApi.Data.Context;
-using MongoDB.Driver;
 using Microsoft.Extensions.Options;
 using OrderApi.Models;
 using Microsoft.EntityFrameworkCore;
@@ -39,12 +37,13 @@ namespace OrderApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHealthChecks();
+            services.AddOptions();
 
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
             //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
-            services.AddDbContext<OrderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("OrderService_con")));
+            services.AddEntityFrameworkSqlServer().AddDbContext<OrderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Order_Service")));
             //services.Configure<OrderServiceDatabaseSettings> (
             // Configuration.GetSection("mongoDb-OrderService"));
             //services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
@@ -61,7 +60,6 @@ namespace OrderApi
 
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(CreateOrderCommand).Assembly);
-            services.AddOptions();
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
