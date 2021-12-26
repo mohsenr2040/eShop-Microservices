@@ -21,6 +21,8 @@ using OrderApi.Data.Context;
 using Microsoft.Extensions.Options;
 using OrderApi.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace OrderApi
 {
@@ -56,8 +58,41 @@ namespace OrderApi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "OrderApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Order Api",
+                    Description = "A simple API to create or pay orders",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Wolfgang Ofner",
+                        Email = "Wolfgang@programmingwithwolfgang.com",
+                        Url = new Uri("https://www.programmingwithwolfgang.com/")
+                    }
+                });
+
+                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                //c.IncludeXmlComments(xmlPath);
             });
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = actionContext =>
+                {
+                    var actionExecutingContext =
+                        actionContext as ActionExecutingContext;
+
+                    if (actionContext.ModelState.ErrorCount > 0
+                        && actionExecutingContext?.ActionArguments.Count == actionContext.ActionDescriptor.Parameters.Count)
+                    {
+                        return new UnprocessableEntityObjectResult(actionContext.ModelState);
+                    }
+
+                    return new BadRequestObjectResult(actionContext.ModelState);
+                };
+            });
+
 
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(CreateOrderCommand).Assembly);

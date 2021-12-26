@@ -183,6 +183,9 @@
             "projectReferences": {
               "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
                 "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              },
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj"
               }
             }
           }
@@ -197,6 +200,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -259,6 +266,9 @@
               },
               "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
                 "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              },
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj"
               }
             }
           }
@@ -273,6 +283,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"

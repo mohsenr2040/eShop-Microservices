@@ -13,7 +13,7 @@ namespace ProductApi.Infrastructure.Automapper
         public MappingProfile()
         {
             CreateMap<CreateProductModel, Product>().ForMember(x => x.Id, opt => opt.Ignore());
-            CreateMap<UpdateProductModel, Product>().ForMember(x => x.Id, opt => opt.Ignore())
+            CreateMap<UpdateProductModel, Product>()
                 .ForMember(x => x.ViewCount, opt => opt.Ignore());
         }
 

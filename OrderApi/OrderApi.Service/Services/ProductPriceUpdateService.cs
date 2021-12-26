@@ -28,7 +28,7 @@ namespace OrderApi.Service.Services
                 
                 if(unpaidOrdersOfProduct.Count!=0)
                 {
-                     List<OrderDetail> Lst_orderdetails=null;
+                     List<OrderDetail> Lst_orderdetails=new List<OrderDetail>();
                     foreach(var _order in unpaidOrdersOfProduct)
                     {
                         var orderdetails = await _mediator.Send(new GetOrderDetailsByOrderIdQuery
@@ -36,7 +36,7 @@ namespace OrderApi.Service.Services
                             order= _order
                         });
 
-                        var orderdetail = orderdetails.FirstOrDefault(o => o.ProductId == updateProductPriceModel.ProductId);
+                        var orderdetail = orderdetails.FirstOrDefault(o => o.ProductId == updateProductPriceModel.Id);
                         if(orderdetail!=null)
                         {
                             orderdetail.Price = updateProductPriceModel.Price;

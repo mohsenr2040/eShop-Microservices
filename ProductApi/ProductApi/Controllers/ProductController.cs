@@ -56,7 +56,7 @@ namespace ProductApi.Controllers
                 }) ;
                 if (product == null)
                 {
-                    return BadRequest($"No customer found with the id {updateProductModel.ProductId}");
+                    return BadRequest($"No product found with the id {updateProductModel.ProductId}");
                 }
 
                 return await _mediator.Send(new UpdateProductCommand

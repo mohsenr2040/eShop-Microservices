@@ -1,5 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using ProductApi.Domain.Entities;
+using ProductApi.Messaging.Send.Options;
 using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,14 @@ namespace ProductApi.Messaging.Send.Sender
         private readonly string _userName;
         private readonly string _password;
         private IConnection _connection;
+        public UpdateProductSender(IOptions<RabbitMqConfiguration> rabbitMqOptions)
+        {
+            _hostName = rabbitMqOptions.Value.HostName;
+            _queueName = rabbitMqOptions.Value.QueueName;
+            _userName = rabbitMqOptions.Value.UserName;
+            _password = rabbitMqOptions.Value.Password;
+            CreateConnection(); 
+        }
         public void SendProduct(Product product)
         {
             if(ConnectionExists())
