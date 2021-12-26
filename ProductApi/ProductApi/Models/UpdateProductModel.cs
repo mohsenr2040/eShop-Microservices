@@ -9,7 +9,6 @@ namespace ProductApi.Models
     public class UpdateProductModel
     {
         public Guid ProductId { get; set; }
-        [Required]
         public string Name { get; set; }
         public string Brand { get; set; }
         public string Description { get; set; }

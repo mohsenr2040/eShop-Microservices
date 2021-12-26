@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fIBH+wl2zAWMTVCqdLT2SqzRmjY9h5fItnFEZSCmaTeezvnBh+ARa8VVukwIYU5gJbG5cVa7nFYMXZrQnPtQlA==",
+  "dgSpecHash": "QVE1FGyM+2gN4G878zVLbvFZO6+YUvy5QU11bkzXqxPlMn3tfOmpwlNGZEPduRE8GdSxk45+Sq+Me8iqT+s7Jg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
+  "projectFilePath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
