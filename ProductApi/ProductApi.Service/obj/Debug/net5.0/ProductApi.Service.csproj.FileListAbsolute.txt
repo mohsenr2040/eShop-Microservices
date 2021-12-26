@@ -32,3 +32,5 @@ E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Service\obj\D
 E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.dll
 E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Service\obj\Debug\net5.0\ref\ProductApi.Service.dll
 E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi.Service\obj\Debug\net5.0\ProductApi.Service.pdb
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Messaging.Send.dll
+D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi.Service\bin\Debug\net5.0\ProductApi.Messaging.Send.pdb

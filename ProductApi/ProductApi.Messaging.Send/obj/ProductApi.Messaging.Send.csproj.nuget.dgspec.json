@@ -1,23 +1,114 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {}
+    "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+    "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\ProductApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
-        "projectName": "ProductApi.Domain",
-        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\obj\\",
+        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\ProductApi.Data.csproj",
+        "projectName": "ProductApi.Data",
+        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\ProductApi.Data.csproj",
+        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
+        "projectName": "ProductApi.Domain",
+        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,24 +148,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
+    "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
+        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
         "projectName": "ProductApi.Messaging.Send",
-        "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\obj\\",
+        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj",
+        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +181,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
-                "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              },
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj"
               }
             }
           }
@@ -104,6 +200,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -128,7 +228,86 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj",
+        "projectName": "ProductApi.Service",
+        "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj",
+        "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\ProductApi.Data.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Data\\ProductApi.Data.csproj"
+              },
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+              },
+              "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
+                "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

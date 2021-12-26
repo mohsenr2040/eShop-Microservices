@@ -14,15 +14,18 @@ namespace ProductApi.Service.Command
     public class UpdateProductCommandHandler: IRequestHandler<UpdateProductCommand,Product>
     {
         private readonly IProductRepository _productRepository;
-        private readonly IupdateproductSender _updateproductSender;
+        private readonly IUpdateProductSender _updateproductSender;
 
-        public UpdateProductCommandHandler(IProductRepository productRepository)
+        public UpdateProductCommandHandler(IProductRepository productRepository, IUpdateProductSender updateProductSender)
         {
             _productRepository = productRepository;
+            _updateproductSender = updateProductSender;
         }
         public async Task<Product> Handle(UpdateProductCommand request,CancellationToken cancellationtoken)
         {
-            return await _productRepository.UpdateAsync(request.Product);
+            Product product= await _productRepository.UpdateAsync(request.Product);
+            _updateproductSender.SendProduct(product);
+            return product;
         }
     }
 }

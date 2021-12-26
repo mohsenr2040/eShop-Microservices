@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderApi.Service.Models
+namespace ProductApi.Service.Models
 {
-    public class UpdateProductPriceModel
+    public class UpdatedProductPriceModel
     {
         public int Id { get; set; }
+        public Guid ProductId { get; set; }
         public int Price { get; set; }
     }
 }

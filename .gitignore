@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+OrderApi/OrderApi/appsettings.json
+=======
 # Prerequisites
 *.d
 *.json
@@ -50,3 +53,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+>>>>>>> 2da8d7bab2aac788a5fd55d781e904c174c3a709
