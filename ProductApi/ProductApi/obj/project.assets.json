@@ -5812,26 +5812,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IT-Human\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi\\ProductApi.csproj",
+      "projectUniqueName": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi\\ProductApi.csproj",
       "projectName": "ProductApi",
-      "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi\\ProductApi.csproj",
-      "packagesPath": "C:\\Users\\IT-Human\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi\\obj\\",
+      "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi\\ProductApi.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\IT-Human\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5845,14 +5842,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
-              "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
+            "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj": {
+              "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Domain\\ProductApi.Domain.csproj"
             },
-            "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
-              "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj"
+            "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj": {
+              "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Messaging.Send\\ProductApi.Messaging.Send.csproj"
             },
-            "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj": {
-              "projectPath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj"
+            "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj": {
+              "projectPath": "E:\\Projects\\Microservice\\eShop-Microservices\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj"
             }
           }
         }
@@ -5920,7 +5917,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
