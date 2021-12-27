@@ -9,7 +9,7 @@ namespace OrderApi.Models
 {
     public class OrderModel
     {
-        public Guid CustomerGuid { get; set; }
+        public Guid CustomerGuid { get; set; } = Guid.NewGuid();
         public OrderState OrderState { get; set; } = 0;
         public string Addrress { get; set; }
         public string CustomerFullName { get; set; }

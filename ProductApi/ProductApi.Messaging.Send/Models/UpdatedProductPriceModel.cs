@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApi.Service.Models
+namespace ProductApi.Messaging.Send.Models
 {
     public class UpdatedProductPriceModel
     {

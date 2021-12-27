@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ProductApi.Messaging.Send.Sender;
+using ProductApi.Messaging.Send.Models;
 
 namespace ProductApi.Service.Command
 {
@@ -23,8 +24,18 @@ namespace ProductApi.Service.Command
         }
         public async Task<Product> Handle(UpdateProductCommand request,CancellationToken cancellationtoken)
         {
+            //Product pre_product = await _productRepository.GetProductByIdAsync(request.Product.ProductGuid,cancellationtoken); 
             Product product= await _productRepository.UpdateAsync(request.Product);
-            _updateproductSender.SendProduct(product);
+            UpdatedProductPriceModel priceModel =  new UpdatedProductPriceModel()
+            {
+                Id = product.Id,
+                Price = product.Price,
+                ProductId = product.ProductGuid
+            };
+            //if(pre_product.Price!=product.Price)
+            //{
+                _updateproductSender.SendProduct(priceModel);
+            //}
             return product;
         }
     }
