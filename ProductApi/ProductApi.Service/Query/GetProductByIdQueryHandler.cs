@@ -19,7 +19,8 @@ namespace ProductApi.Service.Query
         }
         public async Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            return await _productRepository.GetProductByIdAsync(request.Id, cancellationToken);
+            var p= await _productRepository.GetProductByIdAsync(request.Id, cancellationToken);
+            return p;
         }
     }
 }

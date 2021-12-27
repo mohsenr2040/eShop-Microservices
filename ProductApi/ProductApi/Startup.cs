@@ -55,7 +55,7 @@ namespace ProductApi
                 {
                     Title = "ProductApi",
                     Version = "v1",
-                    Description = "A simple API to create or update customers",
+                    Description = "A simple API to create or update products",
                     Contact = new OpenApiContact
                     {
                         Name = "Mohsen Rezaei",

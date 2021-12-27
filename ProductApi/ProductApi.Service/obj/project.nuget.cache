@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "BNjRksUgVfOX69YGfhhw1adwW/payB1GSVQn4MQJAhBCi5thWLkltlUF3O3EIeUWg6CRVuiJYyGdRVPt+KDmKQ==",
-  "success": false,
+  "dgSpecHash": "UJHDOw1majyEs4bWn91dVnMHWVWKA7DZRSn4VWg22TSLl4c0pPKVE1nf6vwvBYdLoc4jlnp+YHPmoMAYhuDk5g==",
+  "success": true,
   "projectFilePath": "D:\\Projects\\Microservice\\eShop-Microservice\\ProductApi\\ProductApi.Service\\ProductApi.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IT-Human\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
@@ -101,15 +101,5 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  ProductApi.Service -> ProductApi.Messaging.Send -> ProductApi.Service.",
-      "libraryId": "ProductApi.Service",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
