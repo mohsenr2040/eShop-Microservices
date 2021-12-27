@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ProductApi.Domain.Entities;
-using ProductApi.Service.Models;
+using ProductApi.Messaging.Send.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

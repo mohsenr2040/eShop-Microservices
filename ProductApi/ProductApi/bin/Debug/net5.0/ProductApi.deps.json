@@ -1417,6 +1417,7 @@
       },
       "ProductApi.Service/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "MediatR": "9.0.0",
           "ProductApi.Data": "1.0.0",
           "ProductApi.Domain": "1.0.0",

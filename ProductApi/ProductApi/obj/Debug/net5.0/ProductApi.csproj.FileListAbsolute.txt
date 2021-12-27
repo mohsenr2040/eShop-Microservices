@@ -146,3 +146,7 @@ D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Projects\Microservice\eShop-Microservice\ProductApi\ProductApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+E:\Projects\Microservice\eShop-Microservices\ProductApi\ProductApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

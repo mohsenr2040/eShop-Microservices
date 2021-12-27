@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using ProductApi.Domain.Entities;
+using ProductApi.Messaging.Send.Models;
 using ProductApi.Messaging.Send.Options;
 using RabbitMQ.Client;
 using System;
@@ -26,7 +27,7 @@ namespace ProductApi.Messaging.Send.Sender
             _password = rabbitMqOptions.Value.Password;
             CreateConnection(); 
         }
-        public void SendProduct(Product product)
+        public void SendProduct(UpdatedProductPriceModel updatedProductPriceModel)
         {
             if(ConnectionExists())
             {
@@ -34,7 +35,7 @@ namespace ProductApi.Messaging.Send.Sender
                 {
                     channel.QueueDeclare(queue: _queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
-                    var json = JsonConvert.SerializeObject(product);
+                    var json = JsonConvert.SerializeObject(updatedProductPriceModel);
                     var body = Encoding.UTF8.GetBytes(json);
 
                     channel.BasicPublish(exchange: "", routingKey: _queueName, basicProperties: null, body: body);

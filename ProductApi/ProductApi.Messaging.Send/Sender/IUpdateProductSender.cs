@@ -1,4 +1,5 @@
 ﻿using ProductApi.Domain.Entities;
+using ProductApi.Messaging.Send.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace ProductApi.Messaging.Send.Sender
 {
     public interface IUpdateProductSender
     {
-        void SendProduct(Product product);
+        void SendProduct(UpdatedProductPriceModel updatedProductPriceModel);
     }
 }
