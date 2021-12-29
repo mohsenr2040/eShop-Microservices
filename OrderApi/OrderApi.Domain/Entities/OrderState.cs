@@ -11,10 +11,10 @@ namespace OrderApi.Domain.Entities
     {
         [Display(Name = "لغو شده")]
         Canceled = 0,
-        
+
         [Display(Name = "پرداخت نشده")]
         UnPaid = 1,
-      
+       
         [Display(Name = "پرداخت شده")]
         Paid = 2,
 

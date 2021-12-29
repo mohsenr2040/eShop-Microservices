@@ -1,0 +1,19 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "ConnectionStrings": { "Product-Service": "Server=ES011-9990C0001\\MSSQLSERVER1;Initial Catalog=ProductService;Trusted_Connection=True;MultipleActiveResultSets=true;" },
+
+  "AllowedHosts": "*",
+  "RabbitMq": {
+    "HostName": "rabbitmq",
+    "QueueName": "ProductQueue",
+    "UserName": "user",
+    "Password": "password",
+      "Enabled": true
+  }
+}

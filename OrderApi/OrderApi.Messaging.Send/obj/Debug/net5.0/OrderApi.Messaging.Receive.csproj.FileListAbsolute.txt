@@ -1,4 +1,6 @@
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.deps.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.dev.json
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.dll
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.pdb
@@ -17,7 +19,10 @@ D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\obj
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.dll
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
 D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.genruntimeconfig.cache
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.deps.json
+E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.json
+E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.dev.json
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.pdb
@@ -36,3 +41,48 @@ E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\ob
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
 E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+E:\Projects\Microservice\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.genruntimeconfig.cache
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.deps.json
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.json
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.dev.json
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Data.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Domain.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Service.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Service.pdb
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Data.pdb
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Domain.pdb
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.AssemblyReference.cache
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.AssemblyInfoInputs.cache
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.AssemblyInfo.cs
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.CoreCompileInputs.cache
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.CopyComplete
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+D:\Projects\Microservice\test\eShop-Microservices\OrderApi\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.genruntimeconfig.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.deps.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.runtimeconfig.dev.json
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Data.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Domain.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Service.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Service.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Data.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\bin\Debug\net5.0\OrderApi.Domain.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.AssemblyReference.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.AssemblyInfoInputs.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.AssemblyInfo.cs
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.CoreCompileInputs.cache
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.csproj.CopyComplete
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\ref\OrderApi.Messaging.Receive.dll
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.pdb
+D:\Projects\Microservice\eShop-Microservice\OrderApi with mongoDb\OrderApi.Messaging.Send\obj\Debug\net5.0\OrderApi.Messaging.Receive.genruntimeconfig.cache

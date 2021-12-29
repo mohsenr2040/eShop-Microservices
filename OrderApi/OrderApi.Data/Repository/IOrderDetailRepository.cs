@@ -10,6 +10,6 @@ namespace OrderApi.Data.Repository
 {
      public interface IOrderDetailRepository :IRepository<OrderDetail>
     {
-        Task<List<OrderDetail>> GetOrderDetailsByOrderIdAsync(int Id, CancellationToken cancellationToken);
+        Task<List<OrderDetail>> GetOrderDetailsByOrderIdAsync(string Id, CancellationToken cancellationToken);
     }
 }

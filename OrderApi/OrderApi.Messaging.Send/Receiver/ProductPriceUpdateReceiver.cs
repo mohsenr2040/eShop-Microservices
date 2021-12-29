@@ -7,6 +7,9 @@ using OrderApi.Service.Models;
 using OrderApi.Service.Services;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -29,6 +32,7 @@ namespace OrderApi.Messaging.Receive.Receiver
             _queuename = rabbimqoptions.Value.QueueName;
             _username = rabbimqoptions.Value.UserName;
             _password = rabbimqoptions.Value.Password;
+
             InitializerabbitMqListener();
         }
         private void InitializerabbitMqListener()

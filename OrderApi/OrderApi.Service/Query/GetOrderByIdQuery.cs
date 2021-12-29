@@ -10,6 +10,6 @@ namespace OrderApi.Service.Query
 {
     public class GetOrderByIdQuery:IRequest<Order>
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
     }
 }

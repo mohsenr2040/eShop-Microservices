@@ -10,5 +10,6 @@ namespace OrderApi.Service.Query
 {
     public class GetUnpaidOrdersQuery:IRequest<List<Order>>
     {
+      //public List<Order> Orders { get; set; }
     }
 }

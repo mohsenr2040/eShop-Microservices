@@ -9,9 +9,10 @@ namespace OrderApi.Infrastructure.Automapper
     {
         public MappingProfile()
         {
-            CreateMap<OrderModel, Order>()
+            CreateMap<OderModel, Order>()
                 .ForMember(x => x.OrderState, opt => opt.MapFrom(src => 1));
             CreateMap<OrderDetailsModel, OrderDetail>();
+
         }
     }
 }

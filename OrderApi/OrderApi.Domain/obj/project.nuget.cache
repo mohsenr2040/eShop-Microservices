@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "its55mfmesMxmjzMBQF7JhYfS2/r+Tejl5hH1qqNFJDb4/SQJxDx4ZQndiWbzy7nm8eCzEQtj9R/5hazRIWCRA==",
+  "dgSpecHash": "blU3wOWzjArPNKJnMx5xEGee+K7XC3Oe1GHXJfefyVkte9hkAiCY9EIpo8av3OYD3oRfWTFWVqbDoDO4xrN7HQ==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\Microservice\\eShop-Microservices\\OrderApi\\OrderApi.Domain\\OrderApi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projects\\Microservice\\eShop-Microservice\\OrderApi with mongoDb\\OrderApi.Domain\\OrderApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IT-Human\\.nuget\\packages\\mongodb.bson\\2.14.1\\mongodb.bson.2.14.1.nupkg.sha512",
+    "C:\\Users\\IT-Human\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

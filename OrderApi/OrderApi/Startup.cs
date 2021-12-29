@@ -17,12 +17,11 @@ using OrderApi.Service.Query;
 using OrderApi.Service.Command;
 using MediatR;
 using OrderApi.Messaging.Receive.Receiver;
+using OrderApi.Data.Database;
 using OrderApi.Data.Context;
+using MongoDB.Driver;
 using Microsoft.Extensions.Options;
 using OrderApi.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace OrderApi
 {
@@ -39,18 +38,17 @@ namespace OrderApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHealthChecks();
-            services.AddOptions();
 
             var serviceClientSettingsConfig = Configuration.GetSection("RabbitMq");
             var serviceClientSettings = serviceClientSettingsConfig.Get<RabbitMqConfiguration>();
             services.Configure<RabbitMqConfiguration>(serviceClientSettingsConfig);
-
             //services.AddSingleton<IMongoClient, MongoClient>(sp => new MongoClient(Configuration.GetConnectionString("ConnectionString")));
-            services.AddEntityFrameworkSqlServer().AddDbContext<OrderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Order_Service")));
-            //services.Configure<OrderServiceDatabaseSettings> (
-            // Configuration.GetSection("mongoDb-OrderService"));
-            //services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
-            //      sp.GetRequiredService<IOptions<OrderServiceDatabaseSettings>>().Value);
+       
+            services.Configure<OrderServiceDatabaseSettings> (
+             Configuration.GetSection("mongoDb-OrderService"));
+            services.AddSingleton<IOrderServiceDatabaseSettings>(sp =>
+                  sp.GetRequiredService<IOptions<OrderServiceDatabaseSettings>>().Value);
+            services.AddSingleton<IMongoOrderContext,MongoOrderContext>();
 
             services.AddAutoMapper(typeof(Startup));
             //services.AddAutoMapper(typeof(OderModel),typeof(Order));
@@ -58,51 +56,23 @@ namespace OrderApi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Order Api",
-                    Description = "A simple API to create or pay orders",
-                    Contact = new OpenApiContact
-                    {
-                        Name = "Wolfgang Ofner",
-                        Email = "Wolfgang@programmingwithwolfgang.com",
-                        Url = new Uri("https://www.programmingwithwolfgang.com/")
-                    }
-                });
-
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //c.IncludeXmlComments(xmlPath);
-            });
-
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.InvalidModelStateResponseFactory = actionContext =>
-                {
-                    var actionExecutingContext =
-                        actionContext as ActionExecutingContext;
-
-                    if (actionContext.ModelState.ErrorCount > 0
-                        && actionExecutingContext?.ActionArguments.Count == actionContext.ActionDescriptor.Parameters.Count)
-                    {
-                        return new UnprocessableEntityObjectResult(actionContext.ModelState);
-                    }
-
-                    return new BadRequestObjectResult(actionContext.ModelState);
-                };
-            });
-
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "OrderApi", Version = "v1" });
+            }); 
+            
+            services.AddOptions();
 
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(IProductPriceUpdateService).Assembly);
             services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(CreateOrderCommand).Assembly);
+            services.AddMediatR(Assembly.GetExecutingAssembly(), typeof(GetUnpaidOrdersQuery).Assembly);
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             //services.AddTransient<IValidator<OrderModel>, OrderModelValidator>();
             services.AddTransient<IRequestHandler<GetPaidOrdersQuery, List<Order>>, GetPaidOrdersQueryHandler>();
+            services.AddTransient<IRequestHandler<GetUnpaidOrdersQuery, List<Order>>, GetUnpaidOrdersQueryHandler>();
             services.AddTransient<IRequestHandler<GetOrderByIdQuery, Order>, GetOrderByIdQueryHandler>();
             services.AddTransient<IRequestHandler<CreateOrderCommand, Order>, CreateOrderCommandHandler >();
             services.AddTransient<IRequestHandler<PayOrderCommand, Order>, PayOrderCommandHandler>();

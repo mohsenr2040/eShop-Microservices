@@ -30,12 +30,12 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         [HttpPost]
-        public async Task Order(OrderModel orderModel)
+        public async Task Order(OderModel orderModel)
         {
             Order order;
             try
             {
-                order= await _mediator.Send(new CreateOrderCommand
+                order = await _mediator.Send(new CreateOrderCommand
                 {
                     Order = _mapper.Map<Order>(orderModel)
                 });
@@ -46,7 +46,7 @@ namespace OrderApi.Controllers
                 //}
                 await _mediator.Send(new CreateOrderDetailCommand
                 {
-                    OrderDetails=_mapper.Map<List<OrderDetail>>(orderModel.OrderDetailsModels)
+                    OrderDetails = _mapper.Map<List<OrderDetail>>(orderModel.OrderDetailsModels)
                 });
             }
             catch (Exception ex)
@@ -73,7 +73,7 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet("GetOrder/{id}")]
-        public async Task<ActionResult<Order>> GetOrder(int id)
+        public async Task<ActionResult<Order>> GetOrder(string id)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace OrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("Pay/{id}")]
-        public async Task<ActionResult<Order>> Pay(int id)
+        public async Task<ActionResult<Order>> Pay(string id)
         {
             try
             {

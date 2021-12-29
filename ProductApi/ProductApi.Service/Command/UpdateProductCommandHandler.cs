@@ -34,7 +34,7 @@ namespace ProductApi.Service.Command
             };
             //if(pre_product.Price!=product.Price)
             //{
-                _updateproductSender.SendProduct(priceModel);
+             _updateproductSender.SendProduct(priceModel);
             //}
             return product;
         }
