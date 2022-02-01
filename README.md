@@ -9,6 +9,7 @@ eShop Microservices
 	
 ## Technologies
 Project is created with:
+ * Microservice
  * Clean Architecture 
  * ASP.Net Core
  * LINQ
