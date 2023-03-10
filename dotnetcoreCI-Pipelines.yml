@@ -17,24 +17,25 @@ steps:
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
-    displayName: 'Restore Nuget Packages'
     feedsToUse: 'select'
+  displayName: 'Restore Nuget Packages'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     projects: '**/*.csproj'
     arguments: '--no-restore'
-    displayName: 'build'
+  displayName: 'build'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
     projects: '**/*Test.csproj'
     arguments: '--no-restore'
-    displayName: 'test'
+  displayName: 'test'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
     publishWebProjects: false
     projects: '**/ProductApi.csproj'
     arguments: '--configuration $(buildConfiguration) --no-restore'
-    displayName: 'publish'
+  displayName: 'Publish CustomerApi'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master')) 
