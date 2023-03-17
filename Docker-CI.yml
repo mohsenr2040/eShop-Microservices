@@ -1,0 +1,35 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+name: Docker-CI
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+ vmImage: 'ubuntu-latest'
+
+variables:
+  ImageName: 'mohsenr2040/productapi:$(Build:BuildId)'
+
+stages:
+  - stage: Build
+    displayName: Build image
+    jobs:
+    -job: DockerImage
+      displayName: Build and push Docker image
+      steps:
+        - task: Docker@2
+          inputs:
+            containerRegistry: 'Docker Hub'
+            repository: 'mohsenr2040 / productapi'
+            command: 'build'
+            Dockerfile: '**/Dockerfile'
+            imageName: '$(ImageName)'
+            includeLatestTag: true
+            useDefaultContext: false
+            buildContext: '.'
+   
