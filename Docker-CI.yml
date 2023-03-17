@@ -22,7 +22,8 @@ stages:
     -job: DockerImage
       displayName: Build and push Docker image
       steps:
-        - task: Docker@2
+        - task: Docker@1
+          displayName: 'Build the Docker image'
           inputs:
             containerRegistry: 'Docker Hub'
             repository: 'mohsenr2040 / productapi'
