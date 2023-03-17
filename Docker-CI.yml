@@ -28,7 +28,7 @@ stages:
           containerregistrytype: 'Container Registry'
           dockerRegistryEndpoint: 'Docker Hub'
           command: 'Build an image'
-          dockerFile: '**/Dockerfile'
+          dockerFile: '$(Build.SourcesDirectory)/Dockerfile'
           imageName: '$(ImageName)'
           includeLatestTag: true
           useDefaultContext: false
