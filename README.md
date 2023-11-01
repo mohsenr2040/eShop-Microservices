@@ -9,11 +9,12 @@ eShop Microservices
 	
 ## Technologies
 Project is created with:
- * Microservice
+ * Microservices
  * ASP.Net Core
  * LINQ
  * SQL Server
  * mongoDb
+ * RABBITMQ
 	
 ## Launch
 to run this project:
